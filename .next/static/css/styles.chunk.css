@@ -1,0 +1,103 @@
+@font-face {
+  font-family: "special_elite";
+  src: url(/_next/static/fonts/special-elite-latin-400-ea27fa5a8f90a16889404b076a256c9d.woff2)
+      format("woff2"),
+    url(/_next/static/fonts/special-elite-latin-400-c79ea9b2c4d24dd1aac07967da6ea04a.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'special_elite', Courier, monospace;
+}
+
+p {
+  letter-spacing: .2rem;
+  line-height: 1.5rem;
+}
+
+html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Content Content Content Content Content Sidebar Sidebar Sidebar";
+}
+
+.Sidebar {
+  display: grid;
+  grid-template-columns: 0.3fr 1.2fr 2fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  grid-template-areas: ". . ." "nav first-col second-col" ". . .";
+  grid-area: Sidebar;
+  height: 100%;
+}
+
+.nav { grid-area: nav; }
+
+.first-col { grid-area: first-col; }
+
+.second-col { 
+  grid-area: second-col;
+  border-left: 2px solid yellowgreen;
+ }
+
+.sidebar-wrapper {
+   grid-area: Sidebar;
+   background-image: url(/_next/static/images/header-05e71b2431fca9ee3f34729d8328f5ae.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+  }
+
+.Content { 
+  grid-area: Content; 
+  margin: 2rem 3rem;
+  /* border: 1px solid; */
+  padding: 1rem 1rem 0 1rem;
+}
+
+.nav {
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100px;
+  position: relative;
+  left: -80px;
+  list-style-type: none;
+}
+
+.nav li {
+  transform: rotate(90deg);
+  color: gray;
+  text-align: center;
+}
+
+.nav li a {
+  transform: rotate(90deg);
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.nav li a:hover {
+  color: rgb(51, 49, 49);
+  border-bottom: 1px solid red;
+}
+
+.second-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rem;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=styles.chunk.css.map*/

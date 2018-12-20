@@ -1,0 +1,39 @@
+.nav {
+  display: flex;
+  padding: 2rem 0;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 100px;
+  position: relative;
+  left: -80px;
+  list-style-type: none;
+}
+
+.nav li {
+  transform: rotate(90deg);
+  color: gray;
+  text-align: center;
+}
+
+.nav li a {
+  transform: rotate(90deg);
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.nav li a:hover {
+  color: rgb(51, 49, 49);
+  border-bottom: 1px solid red;
+}
+
+.second-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rem;
+  overflow: hidden;
+  font-family: sans-serif;
+  color: aliceblue;
+}
