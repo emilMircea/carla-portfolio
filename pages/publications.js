@@ -11,10 +11,10 @@ const Publication = () => (
   </li>
 );
 
-const Publications = () => {
+const Publications = (props) => {
   return <div className="grid-container">
       <div className="sidebar-wrapper">
-        <Sidebar />
+      <Sidebar path={props.url.pathname} />
       </div>
       <div className="Content">
         <Content>

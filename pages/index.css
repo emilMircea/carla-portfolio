@@ -7,19 +7,37 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "aleo";
+  src: url("../node_modules/typeface-aleo/files/aleo-300.woff2")
+      format("woff2"),
+    url("../node_modules/typeface-aleo/files/aleo-400.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cabin";
+  src: url("../node_modules/typeface-cabin/files/cabin-latin-400.woff2")
+      format("woff2"),
+    url("../node_modules/typeface-cabin/files/cabin-latin-400.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: 'special_elite', Courier, monospace;
+  font-family: 'cabin', Courier, monospace;
 }
 
 p {
   letter-spacing: .2rem;
   line-height: 1.5rem;
 }
-
+/* 
 html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
   height: 100%;
-}
+} */
 
 .grid-container {
   display: grid;
@@ -34,10 +52,12 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
   grid-template-rows: 0.3fr 2.4fr 0.3fr;
   grid-template-areas: ". . ." "nav first-col second-col" ". . .";
   grid-area: Sidebar;
-  height: 100%;
+  height: 100vh;
 }
 
-.nav { grid-area: nav; }
+.nav { 
+  grid-area: nav;
+ }
 
 .first-col { grid-area: first-col; }
 
@@ -55,7 +75,7 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
 
 .Content { 
   grid-area: Content; 
-  margin: 2rem 3rem;
-  /* border: 1px solid; */
+  margin: 3rem;
   padding: 1rem 1rem 0 1rem;
+  line-height: 2rem;
 }

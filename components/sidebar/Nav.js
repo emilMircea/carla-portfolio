@@ -1,26 +1,34 @@
 import React from "react";
+import { withRouter } from "next/router";
+
 import Link from "next/link";
 
-const Nav = () => (
+const Nav = props => (
   <ul className="nav">
     <li>
-      <Link prefetch href="/about">
-        <a>About me</a>
+      <Link prefetch href="/">
+        <a className={`${props.path === "/" ? "active" : null}`}>About me</a>
       </Link>
     </li>
     <li>
       <Link prefetch href="/experience">
-        <a>Experience</a>
+        <a className={`${props.path === "/experience" ? "active" : null}`}>
+          Experience
+        </a>
       </Link>
     </li>
     <li>
       <Link prefetch href="/education">
-        <a>Education</a>
+        <a className={`${props.path === "/education" ? "active" : null}`}>
+          Education
+        </a>
       </Link>
     </li>
     <li>
       <Link prefetch href="/publications">
-        <a>Publications</a>
+        <a className={`${props.path === "/publications" ? "active" : null}`}>
+          Publications
+        </a>
       </Link>
     </li>
   </ul>

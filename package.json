@@ -13,11 +13,14 @@
   "license": "ISC",
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
+    "animate.css": "^3.7.0",
     "next": "^7.0.2",
     "next-fonts": "^0.16.0",
     "next-images": "^1.0.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "typeface-aleo": "0.0.44",
+    "typeface-cabin": "0.0.54",
     "typeface-special-elite": "0.0.54"
   }
 }
