@@ -1,86 +1,4 @@
 @font-face {
-  font-family: "special_elite";
-  src: url(/_next/static/fonts/special-elite-latin-400-ea27fa5a8f90a16889404b076a256c9d.woff2)
-      format("woff2"),
-    url(/_next/static/fonts/special-elite-latin-400-c79ea9b2c4d24dd1aac07967da6ea04a.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "aleo";
-  src: url(/_next/static/fonts/aleo-300-954f4988210027530130156dd09e0991.woff2)
-      format("woff2"),
-    url(/_next/static/fonts/aleo-400-426710ad44b1c0088d4fe48b1f88db0c.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "cabin";
-  src: url(/_next/static/fonts/cabin-latin-400-862242471e8a1ea2652c2b0e0b475553.woff2)
-      format("woff2"),
-    url(/_next/static/fonts/cabin-latin-400-0f3d0cbdd61106c0323169b1541b24f5.woff) format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-body {
-  margin: 0;
-  font-family: 'cabin', Courier, monospace;
-}
-
-p {
-  letter-spacing: .2rem;
-  line-height: 1.5rem;
-}
-/* 
-html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
-  height: 100%;
-} */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Content Content Content Content Content Sidebar Sidebar Sidebar";
-}
-
-.Sidebar {
-  display: grid;
-  grid-template-columns: 0.3fr 1.2fr 2fr;
-  grid-template-rows: 0.3fr 2.4fr 0.3fr;
-  grid-template-areas: ". . ." "nav first-col second-col" ". . .";
-  grid-area: Sidebar;
-  height: 100vh;
-}
-
-.nav { 
-  grid-area: nav;
- }
-
-.first-col { grid-area: first-col; }
-
-.second-col { 
-  grid-area: second-col;
-  border-left: 2px solid yellowgreen;
- }
-
-.sidebar-wrapper {
-   grid-area: Sidebar;
-   background-image: url(/_next/static/images/header-05e71b2431fca9ee3f34729d8328f5ae.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-  }
-
-.Content { 
-  grid-area: Content; 
-  margin: 3rem;
-  padding: 1rem 1rem 0 1rem;
-  line-height: 2rem;
-}
-
-@font-face {
   font-family: "cabin";
   src: url(/_next/static/fonts/cabin-latin-400-862242471e8a1ea2652c2b0e0b475553.woff2)
       format("woff2"),
@@ -94,6 +12,9 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
   height: 100vh;
   position: sticky;
   top: 0;
+  background-image: url(/_next/static/images/header-05e71b2431fca9ee3f34729d8328f5ae.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {
@@ -181,6 +102,85 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
     -webkit-transform: translateY(-100px);
             transform: translateY(-100px);
   }
+}
+
+@font-face {
+  font-family: "special_elite";
+  src: url(/_next/static/fonts/special-elite-latin-400-ea27fa5a8f90a16889404b076a256c9d.woff2)
+      format("woff2"),
+    url(/_next/static/fonts/special-elite-latin-400-c79ea9b2c4d24dd1aac07967da6ea04a.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "aleo";
+  src: url(/_next/static/fonts/aleo-300-954f4988210027530130156dd09e0991.woff2)
+      format("woff2"),
+    url(/_next/static/fonts/aleo-400-426710ad44b1c0088d4fe48b1f88db0c.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cabin";
+  src: url(/_next/static/fonts/cabin-latin-400-862242471e8a1ea2652c2b0e0b475553.woff2)
+      format("woff2"),
+    url(/_next/static/fonts/cabin-latin-400-0f3d0cbdd61106c0323169b1541b24f5.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  font-family: 'cabin', Courier, monospace;
+}
+
+p {
+  letter-spacing: .2rem;
+  line-height: 1.5rem;
+}
+/* 
+html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
+  height: 100%;
+} */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Content Content Content Content Content Sidebar Sidebar Sidebar";
+}
+
+.Sidebar {
+  display: grid;
+  grid-template-columns: 0.3fr 1.2fr 2fr;
+  grid-template-rows: 0.3fr 2.4fr 0.3fr;
+  grid-template-areas: ". . ." "nav first-col second-col" ". . .";
+  grid-area: Sidebar;
+  height: 100vh;
+}
+
+.nav { 
+  grid-area: nav;
+ }
+
+.sidebar-wrapper {
+  grid-area: Sidebar;
+}
+
+.first-col { grid-area: first-col; }
+
+.second-col { 
+  grid-area: second-col;
+  border-left: 2px solid yellowgreen;
+ }
+
+.Content { 
+  grid-area: Content; 
+  margin: 3rem;
+  padding: 1rem 1rem 0 1rem;
+  line-height: 2rem;
 }
 
 

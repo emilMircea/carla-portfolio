@@ -59,19 +59,16 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
   grid-area: nav;
  }
 
+.sidebar-wrapper {
+  grid-area: Sidebar;
+}
+
 .first-col { grid-area: first-col; }
 
 .second-col { 
   grid-area: second-col;
   border-left: 2px solid yellowgreen;
  }
-
-.sidebar-wrapper {
-   grid-area: Sidebar;
-   background-image: url('../static/header.png');
-   background-repeat: no-repeat;
-   background-size: cover;
-  }
 
 .Content { 
   grid-area: Content; 

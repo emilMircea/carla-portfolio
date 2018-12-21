@@ -12,6 +12,9 @@
   height: 100vh;
   position: sticky;
   top: 0;
+  background-image: url('../../static/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .nav {

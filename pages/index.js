@@ -1,8 +1,43 @@
-import React from "react";
+import React, { Component } from 'react'
+import { CSSTransition } from 'react-transition-group';
 import Header from "../components/Head";
 import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/Content";
 import "./index.css";
+
+const Layout = (props) => (
+  <div className="grid-container">
+    {props.children}
+  </div>
+)
+
+const Fade = ({children, ...props}) => {
+  return (
+    <CSSTransition {...props} timeout={1000} className="fade">
+      {children}
+    </CSSTransition>
+  )
+}
+
+
+
+class Title extends Component {
+  static defaultProps = { initialShow: false }
+  state = { show: this.props.initialShow }
+  toggle = () => {
+    this.setState(({ show }) => ({ show: !show }))
+  }
+  render() {
+    
+    return <div>
+        <button onClick={this.toggle}>Toggle</button>
+        <Fade in={this.state.show}>
+          <h1>{this.props.title}</h1>
+        </Fade>
+      </div>;
+  }
+}
+
 
 const Index = (props) => {
   return <div className="grid-container">
@@ -11,7 +46,8 @@ const Index = (props) => {
       </div>
       <div className="Content">
         <Content>
-          <h1>About me</h1>
+          {/* <h1>About me</h1> */}
+          <Title title='about me' />
           <p>
             I am medical/scientific advisor with experience both in and
             outside academia. Some of my achievements on my current work
