@@ -22,9 +22,7 @@
     "node-sass": "^4.11.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-intl": "^2.7.2",
     "typeface-aleo": "0.0.44",
-    "typeface-cabin": "0.0.54",
-    "typeface-special-elite": "0.0.54"
+    "typeface-cabin": "0.0.54"
   }
 }
