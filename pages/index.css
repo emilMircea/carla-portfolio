@@ -1,16 +1,6 @@
 @font-face {
-  font-family: "special_elite";
-  src: url("../node_modules/typeface-special-elite/files/special-elite-latin-400.woff2")
-      format("woff2"),
-    url("../node_modules/typeface-special-elite/files/special-elite-latin-400.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "aleo";
-  src: url("../node_modules/typeface-aleo/files/aleo-300.woff2")
-      format("woff2"),
+  src: url("../node_modules/typeface-aleo/files/aleo-300.woff2") format("woff2"),
     url("../node_modules/typeface-aleo/files/aleo-400.woff") format("woff");
   font-weight: normal;
   font-style: normal;
@@ -20,30 +10,20 @@
   font-family: "cabin";
   src: url("../node_modules/typeface-cabin/files/cabin-latin-400.woff2")
       format("woff2"),
-    url("../node_modules/typeface-cabin/files/cabin-latin-400.woff") format("woff");
+    url("../node_modules/typeface-cabin/files/cabin-latin-400.woff")
+      format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 body {
   margin: 0;
-  font-family: 'cabin', Courier, monospace;
+  font-family: "cabin", Courier, monospace;
 }
 
 p {
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   line-height: 1.5rem;
-}
-/* 
-html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
-  height: 100%;
-} */
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-template-areas: "Content Content Content Content Content Sidebar Sidebar Sidebar";
 }
 
 .Sidebar {
@@ -55,24 +35,47 @@ html, body, .grid-container, #__next , .sidebar-wrapper, .Content {
   height: 100vh;
 }
 
-.nav { 
+.nav {
   grid-area: nav;
- }
+}
 
 .sidebar-wrapper {
   grid-area: Sidebar;
 }
 
-.first-col { grid-area: first-col; }
+.first-col {
+  grid-area: first-col;
+}
 
-.second-col { 
+.second-col {
   grid-area: second-col;
-  border-left: 2px solid yellowgreen;
- }
+}
 
-.Content { 
-  grid-area: Content; 
-  margin: 3rem;
-  padding: 1rem 1rem 0 1rem;
-  line-height: 2rem;
+.Content {
+  grid-area: Content;
+}
+
+.translation-link {
+  border: none;
+  color: rgba(21, 199, 252, 1);
+  position: absolute;
+  top: 2rem;
+  left: 4rem;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+.page-title::first-letter {
+  color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .Sidebar {
+    display: grid;
+    grid-template-columns: 0.3fr 1.2fr 2fr;
+    grid-template-rows: 0.3fr 2.4fr 0.3fr;
+    grid-template-areas: ". . ." "nav second-col" ". . .";
+    grid-area: Sidebar;
+    height: 100vh;
+  }
 }
