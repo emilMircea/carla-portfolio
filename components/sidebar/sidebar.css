@@ -8,53 +8,26 @@
   font-style: normal;
 }
 
-.sidebar-wrapper {
+.Sidebar {
   height: 100vh;
-  position: sticky;
+  position: fixed;
   top: 0;
-  background-image: url('../../static/header.png');
+  right: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  background: #000;
+  width: 35%;
 }
 
-.nav {
-  width: 85px;
+.first-col {
   display: flex;
-  padding: 0;
   flex-direction: column;
-  justify-content: space-around;
-  position: relative;
-  left: -65px;
-  list-style-type: none;
+  justify-content: center;
 }
 
-.nav li {
-  transform: rotate(90deg);
-  color: gray;
-  text-align: center;
-  font-weight: 900;
-  font-family: "cabin", Courier, monospace;
-}
-
-.nav li a {
-  color: gray;
-  text-align: center;
-  text-decoration: none;
-}
-
-.nav li a:hover {
-  color: #b80f0b;
-  border-bottom: 1px solid #b80f0b;
-  background: transparent;
-}
-
-.nav li::first-letter {
-  color: #b80f0b;
-}
-
-.nav li a.active {
-  color: #b80f0b;
-  border-bottom: 1px solid #b80f0b;
+.first-col img {
+  width: 120px;
+  height: 120px;
 }
 
 .second-col {
@@ -62,44 +35,13 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  font-family: sans-serif;
+  border-left: 1px solid white;
+  flex-direction: column;
 }
 
-.main-number {
-  color: pink;
-  font-size: 20rem;
-  z-index: 99;
-  position: relative;
-  left: -10%;
-}
-
-.slide-top {
-	-webkit-animation: slide-top 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-top 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-/**
- * ----------------------------------------
- * animation slide-top
- * ----------------------------------------
- */
-@-webkit-keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
-  }
-}
-@keyframes slide-top {
-  0% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
-  }
-  100% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+/* breakpoints */
+@media screen and (max-width: 600px) {
+  .Sidebar {
+    display: none;
   }
 }

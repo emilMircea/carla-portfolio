@@ -1,0 +1,42 @@
+.nav {
+  width: 85px;
+  display: flex;
+  padding: 0;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+  left: -65px;
+  list-style-type: none;
+}
+
+
+.nav li {
+  transform: rotate(90deg);
+  color: gray;
+  text-align: center;
+  font-weight: 900;
+  font-family: "cabin", Courier, monospace;
+}
+
+.nav li a {
+  color: gray;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0px 1px -2px #b80f0b;
+  transition: box-shadow 0.6s linear;
+}
+
+.nav li a:hover {
+  color: #b80f0b;
+  box-shadow: 0 4px 1px -4px #b80f0b ; 
+  background: transparent;
+}
+
+.nav li::first-letter {
+  color: #b80f0b;
+}
+
+.nav li a.active {
+  color: #b80f0b;
+  border-bottom: 1px solid #b80f0b;
+}
