@@ -6,7 +6,6 @@ import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/Content";
 import Publication from "../components/publications/Publication";
 import PageTitle from "../components/PageTitle";
-import letterP from "../static/pLetter.svg";
 
 const tranformNamesToArray = stringOfNames => {
   const allNames = stringOfNames.split(";");
@@ -20,7 +19,7 @@ const Publications = props => {
         <Sidebar path={props.url.pathname} bg="publications" />
       </div>
       <Content>
-        <PageTitle imagePath={letterP} title="Publicationes" />
+        <PageTitle imagePath="../static/pLetter.svg" title="Publicationes" />
         <ul>
           <Publication paperTitle="Exact distribution of genetic risk score at the population level">
             Subirana, I.; Lucas, G.; Esnaola, M.; <b>Lluís-Ganella, C.</b>;

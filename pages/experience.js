@@ -5,7 +5,6 @@ import Content from "../components/Content";
 import ExperienceParag from "../components/experience/ExperienceParag";
 import PageTitle from "../components/PageTitle";
 import { translation } from "../data/translation";
-import letterE from "../static/letter_e.svg";
 import "./index.css";
 import "animate.css/animate.min.css";
 
@@ -26,9 +25,9 @@ class Experience extends Component {
             {es ? "Read in English" : "Lee en Espanol"}
           </a>
           {es ? (
-            <PageTitle imagePath={letterE} title="Experiencia" />
+            <PageTitle imagePath="../static/letter_e.svg" title="Experiencia" />
           ) : (
-            <PageTitle imagePath={letterE} title="Experience" />
+            <PageTitle imagePath="../static/letter_e.svg" title="Experience" />
           )}
           <ul>
             <ExperienceParag

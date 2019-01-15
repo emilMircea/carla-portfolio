@@ -4,7 +4,6 @@ import Sidebar from "../components/sidebar/Sidebar";
 import Content from "../components/Content";
 import EdParag from "../components/education/EdParag";
 import PageTitle from "../components/PageTitle";
-import letterE from '../static/letter_e.svg'
 import "./index.css";
 import "animate.css/animate.min.css";
 
@@ -14,7 +13,7 @@ const Education = props => {
       <Sidebar path={props.url.pathname} bg="education" />
       <div className="sidebar-wrapper" />
       <Content>
-        <PageTitle imagePath={letterE} title="Education" />
+        <PageTitle imagePath="../static/letter_e.svg" title="Education" />
 
         <ul className="animated fadeIn" style={{ lineHeight: "2rem" }}>
           <EdParag>
