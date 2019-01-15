@@ -1,21 +1,23 @@
 const aboutEnglish = {
-  first: `I am medical/scientific advisor with experience both in and outside academia. 
-    Some of my achievements on my current work include 
-    performing key changes in the products I am responsible of, 
-    improving their interpretation and the acceptation of the clients. 
-    I have represented the company national and internationally, 
-    both in trainings to the sales reps and participating in congresses.😄`,
-  second: `Thanks to my previous experience in the research field, 
-    I have been involved in research projects of the company, 
-    including the phases of design, 
-    analysis and interpretation of results. 
-    I am familiarized with management activities 
-    and I am capable of working
-    on several related and unrelated tasks contemporaneously. 
-    I also created my own company, 
-    with the aim to perform genetic analyses 
-    on different diseases for research investigators 
-    and to perform trainings on the genetic field.⛽️`
+  first: `With a scientific background, I am an organized, dynamic and innovative person. 
+    I have a great adaptative capacity, which has allowed me to work in different sectors
+    ranging from gynecology to cardiology, from the field of genetics or epidemiology to antibiotics. 
+    During this journey I have performed different roles, being medical advisor 
+    and MSL the ones that I have developed most recently. 
+    The professional experiences that have marked me the most have been writting my PhD thesis 
+    and opening my own company. 
+    In both experiences I've learned that good planning can save a lot of unnecessary work.
+    Good planning and hard work usually end up giving the best results.`,
+  second: `I can speak different languages, which allows me to communicate
+   in different personal and professional environments. 
+   In fact, part of my work experience has been to provide scientific support 
+   to different distributors and clients in geographical areas such as Mexico, 
+   the Netherlands or the Middle East. 
+   Currently I am in charge of half of the Spanish territory.`,
+  third: `In my spare time, I enjoy sports, travel and cooking. 
+    I have competed in sports such as volleyball and paddle since I was a child.
+    In general I am attracted to anything that does not involve being a couch potato (except for late Sunday evenings 😆).
+    In vacation I ride a moto to the end of the world where I use a diving tank to explore underwater mysteries.`
 };
 const experience = {
   shionogi: `I work as Medical Specialist Liason in the area of gynecology and infectious diseases and haepatology.`,
@@ -45,20 +47,31 @@ const en = {
 };
 
 const sobreMi = {
-  first: `Soy asesor médico / científico con experiencia tanto dentro como fuera de la academia.
-     Algunos de mis logros en mi trabajo actual incluyen 
-     realizar cambios clave en los productos de los que soy responsable, 
-     mejorar su interpretación y la aceptación de los clientes. 
-     He representado a la empresa nacional e internacional, 
-     tanto en capacitaciones a los representantes de ventas como en congresos `,
-  second: `Gracias a mi experiencia previa en el campo de la investigación, 
-    he participado en proyectos de investigación de la empresa, 
-    incluidas las fases de diseño, análisis e interpretación de los resultados. 
-    Estoy familiarizado con las actividades de gestión y
-    soy capaz de trabajar en varias Tareas no relacionadas al mismo tiempo.
-    También creé mi propia empresa, con el objetivo de realizar análisis genéticos 
-    sobre diferentes enfermedades para investigadores investigadores y 
-    realizar capacitaciones en el campo genético`
+  first: `Con un background científico, soy una persona organizada, dinámica, 
+    con capacidad de decisión y de innovación. 
+    Tengo una gran capacidad de adaptación, 
+    lo que me ha permitido trabajar en sectores que van desde la ginecología 
+    a la cardiología, del campo de la genética o la epidemiología
+    al de los antibióticos. 
+    Durante este recorrido he realizado diferentes roles, 
+    siendo medical advisor o MSL el que he desarrollado más recientemente. 
+    Las experiencias que más han marcado mi perfil laboral han sido realizar el doctorado
+    y abrir mi propia empresa. 
+    Ambas experiencias me han enseñado que una buena planificación 
+    puede ahorrar mucho trabajo innecesario, 
+    que complementado con el sacrificio correspondiente acabará dando los mejores resultados.`
+    ,
+  second: `Puedo hablar diversos idiomas lo que me permite la comunicación
+    en diferentes entornos personales y profesionales. 
+    De hecho, parte de mi experiencia laboral ha consistido en dar soporte científico
+    en áreas geográficas tan dispares como Méjico, Holanda u Oriente Medio, 
+    a pesar que actualmente me encargue de la mitad del territorio Español.`,
+  third: `En mi tiempo libre, me considero una amante de los deportes, 
+    viajes y la cocina. He competido a deportes como el vóley o el padel, 
+    aunque en general me atrae cualquier cosa que no sea sofing, excepto domingo tarde 😄. 
+    En los viajes intento siempre ir acompañada de una moto y 
+    una botella de buceo allí donde el transporte para las masas no pueda llegar. 
+    `
 };
 
 const experiencia = {

@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Title = ({ children }) => (
-  <h1 style={{ marginLeft: "-1.15rem", zIndex: "1", marginTop: '2.5rem' }}>{children}</h1>
+  <h1 style={{ marginLeft: "-1.2rem", zIndex: "1", marginTop: "2.5rem" }}>
+    {children}
+  </h1>
 );
 
 const PageTitle = ({ imagePath, title }) => (
@@ -13,7 +15,8 @@ const PageTitle = ({ imagePath, title }) => (
 );
 
 PageTitle.propTypes = {
-  imagePath: PropTypes.string.isRequired
+  imagePath: PropTypes.string.isRequired,
+  title: PropTypes.string
 };
 
 export default PageTitle;
