@@ -1,2 +1,8 @@
+# ignore all node modules
 node_modules/
-.next/
+
+# ignore all in out folder
+out
+
+# next.js build output
+.next
