@@ -5,13 +5,6 @@ import "./sidebar.css";
 import "animate.css/animate.min.css";
 
 export default class Sidebar extends PureComponent {
-  state = {
-    firstImage: "header",
-    secondImage: "ex",
-    thirdImage: "ed",
-    fourthImage: "pub"
-  };
-
 
   render() {
     const { path } = this.props;
@@ -20,18 +13,42 @@ export default class Sidebar extends PureComponent {
 
     return (
       <div
-        className="Sidebar animated fadeIn"
-        style={{ backgroundImage: `url(${imagePath}/${bg ? bg : null}.png)` }}
+        className="Sidebar"
+        style={{
+          backgroundImage: `url(${imagePath}/${bg}.png)`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat"
+        }}
       >
         <Nav path={path} />
         <div className="first-col">
-          {path === "/" ? <img src={`${imagePath}/carla-avatar.png`} /> : null}
+          {path === "/" ? (
+            <img src={`${imagePath}/carla-avatar.png`} />
+          ) : (
+            <div style={{background: 'transparent'}} />
+          )}
         </div>
         <div className="second-col">
-          {path === "/" ? <Initials initials="CL" /> : null}
-          {path === "/experience" ? <Initials initials="EX" /> : null}
-          {path === "/education" ? <Initials initials="ED" /> : null}
-          {path === "/publications" ? <Initials initials="PB" /> : null}
+          {path === "/" ? (
+            <Initials initials="CL" />
+          ) : (
+            <Initials />
+          )}
+          {path === "/experience" ? (
+            <Initials initials="EX" />
+          ) : (
+              <Initials />
+          )}
+          {path === "/education" ? (
+            <Initials initials="ED" />
+          ) : (
+              <Initials />
+          )}
+          {path === "/publications" ? (
+            <Initials initials="PB" />
+          ) : (
+              <Initials />
+          )}
         </div>
       </div>
     );
