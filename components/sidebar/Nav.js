@@ -4,51 +4,43 @@ import "./nav.css";
 import "animate.css/animate.min.css";
 import Link from "next/link";
 
-const LinkWrap = ({children, setFirstLoad}) => (
-  <li onClick={setFirstLoad}>
-    {children}
-  </li>
-)
-
 class Nav extends PureComponent {
-  state = {
-    firstLoad: true
-  }
-
-
   render() {
-    const { setFirstLoad } = this;
     const { path } = this.props;
-    const { firstLoad } = this.state;
-    
-    return <ul style={{animationDuration: '.4s'}} className={`nav ${firstLoad ? "animated fadeInRight" : ""}`}>
-        <LinkWrap setFirstLoad={setFirstLoad}>
+
+    return (
+      <ul
+        style={{ animationDuration: ".2s" }}
+        className="nav animated fadeInRight"
+      >
+        <li>
           <Link prefetch href="/">
-            <a className={`${path === "/" ? "active" : null}`}>Sobre Mi</a>
+            <a className={`${path === "/" ? "active" : ""}`}>Sobre Mi</a>
           </Link>
-        </LinkWrap>
-        <LinkWrap setFirstLoad={setFirstLoad}>
+        </li>
+        <li>
           <Link prefetch href="/experience">
-            <a className={`${path === "/experience" ? "active" : null}`}>
+            <a className={`${path === "/experience" ? "active" : ""}`}>
               Experiencia
             </a>
           </Link>
-        </LinkWrap>
+        </li>
         <li>
           <Link prefetch href="/education">
-            <a className={`${path === "/education" ? "active" : null}`}>
+            <a className={`${path === "/education" ? "active" : ""}`}>
               Educación
             </a>
           </Link>
         </li>
         <li>
           <Link prefetch href="/publications">
-            <a className={`${path === "/publications" ? "active" : null}`}>
+            <a className={`${path === "/publications" ? "active" : ""}`}>
               Publicationes
             </a>
           </Link>
         </li>
-      </ul>;
+      </ul>
+    );
   }
 }
 
