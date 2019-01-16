@@ -2,7 +2,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Title = ({ children }) => (
-  <h1 style={{ marginLeft: "-1.2rem", zIndex: "1", marginTop: "2.5rem" }}>
+  <h1 
+    className='page-title'
+  >
     {children}
   </h1>
 );
