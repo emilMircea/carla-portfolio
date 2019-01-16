@@ -65,8 +65,16 @@ p {
   text-decoration: underline;
   font-size: 0.8rem;
 }
+
+.page-title {
+  padding-right: .3rem;
+  margin-left: -1.2rem;
+  z-index: 1;
+  margin-top: 2.5rem;
+}
+
 .page-title::first-letter {
-  color: red;
+  color: transparent;
 }
 
 @media screen and (max-width: 600px) {
@@ -79,3 +87,4 @@ p {
     height: 100vh;
   }
 }
+
