@@ -7,11 +7,6 @@ import Content from "../components/Content";
 import Publication from "../components/publications/Publication";
 import PageTitle from "../components/PageTitle";
 
-const tranformNamesToArray = stringOfNames => {
-  const allNames = stringOfNames.split(";");
-  return allNames;
-};
-
 const Publications = props => {
   return (
     <PageLayout>
