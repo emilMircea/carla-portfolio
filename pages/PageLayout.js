@@ -1,4 +1,4 @@
-import React;
+import React from "react";
 import PropTypes from "prop-types";
 import Sidebar from "../components/sidebar/Sidebar";
 import Head from "next/head";
