@@ -19,7 +19,7 @@
     "next": "^7.0.2",
     "next-fonts": "^0.16.0",
     "next-images": "^1.0.3",
-    "node-sass": "^4.11.0",
+    "node-sass": "^7.0.0",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
     "typeface-aleo": "0.0.44",
